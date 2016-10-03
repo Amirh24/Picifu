@@ -211,6 +211,7 @@ function DisplayText(line, x, y, fontSize) {
             ctx.fillText(line, x, y);
             ctx.strokeText(line, x, y);
             break;
+            //nothing
         }
     }
 }
