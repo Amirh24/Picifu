@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css" />
+    <link rel="text/javascript" src>
+
+    <meta charset="UTF-8">
+    <title>Picify</title>
+</head>
+
+<body>
+
+    <div id="top">
+        <h1 class="noMargin" id="topText">Picify</h1>
+        <div class="noMargin" id="topText">Text To Picture</div>
+        <br>
+        <div class="small" id="topText">To work offline, Right-Click > Save as..</div>
+        <hr>
+    </div>
+
+
+    <div id="box">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div id="backgroundAndText">
+                        <h2>Choose background color/image:</h2> Background Color:
+                        <input id="backgroundColor" class="jscolor" value="FFFFFF">
+                        </br>
+                        </br>
+
+                        <form id="form">
+                            Background Image:
+                            <input id="ifile" type="file">
+                        </form>
+                        <br>
+                        <h4>Add text and click "Approve"" in order to drag it</h4>
+                        <textarea id="theText" rows="2" cols="20" placeholder="Line"> </textarea>
+
+                        <button id="submit">Approve</button>
+                        <br>
+                    </div>
+                    <div id="textOptions">
+                        <br> Text Color:
+                        <input id="TextColor" class="jscolor" value="000000"> Font Size:
+                        <input type="text" id="FontSize" value="36">
+                        <br>
+
+
+
+
+                        <br> Stroke Color:
+                        <input id="strokeColor" class="jscolor" value="000000"> Stroke Size:
+                        <input type="text" id="strokeSize" value="1">
+
+                    </div>
+                    
+                    <br>
+                </div class="col-sm-6">
+<div id="textObjectsArea"> <div>
+
+                <div class="col-sm-6">
+
+                    <br>
+                    <br>
+                    <canvas id="c" width="500" height="500"></canvas>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <a href="#" class="buttonLink" id="downloadLink" download>Download Pic!</a>
+        <br>
+        <br>
+        <a href="">Picify another text!</a>
+    </div>
+
+
+
+    <script type="text/javascript" src="lib/jscolor.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="Text.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+
+</body>
+
+</html>
