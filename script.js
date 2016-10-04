@@ -174,7 +174,7 @@ function createLineButton(textNumberInTextArray, textOnButton, callback) {
 
     // 4. Add event handler
     button.addEventListener("click", function() {
-        alert("Selected text number " + (textNumberInTextArray + 1));
+     //   alert("Selected text number " + (textNumberInTextArray + 1));
         currentIndex = textNumberInTextArray
 
         MarkCurrentButton();
@@ -245,7 +245,8 @@ function draw() {
 
     for (var i = 0; i < texts.length; i++) {
         var text = texts[i];
-        ctx.fillText(text.text, text.x, text.y);
+      //  ctx.fillText(text.text, text.x, text.y);
+         DisplayText(text.text, text.x, text.y, fontSize.value);
         ctx.strokeText(text.text, text.x, text.y);
         
     }

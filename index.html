@@ -37,10 +37,11 @@
                             <input id="ifile" type="file">
                         </form>
                         <br>
-                        <h4>Add text and click "Approve"" in order to drag it</h4>
-                        <textarea id="theText" rows="2" cols="20" placeholder="Line"> </textarea>
+                        <h4>Add text line and click "Approve"" in order to drag it</h4>
+                        <input id="theText" r placeholder="Line"> </input>
 
                         <button id="submit">Approve</button>
+                        <button id="resetText">Delete</button>
                         <br>
                     </div>
                     <div id="textOptions">
@@ -57,33 +58,34 @@
                         <input type="text" id="strokeSize" value="1">
 
                     </div>
-                    
+
                     <br>
                 </div class="col-sm-6">
-<div id="textObjectsArea"> <div>
+                <div id="textObjectsArea">
+                    <div>
 
-                <div class="col-sm-6">
+                        <div class="col-sm-6">
 
-                    <br>
-                    <br>
-                    <canvas id="c" width="500" height="500"></canvas>
+                            <br>
+                            <br>
+                            <canvas id="c" width="500" height="500"></canvas>
+                        </div>
+                    </div>
                 </div>
+                <br>
+                <br>
+                <a href="#" class="buttonLink" id="downloadLink" download>Download Pic!</a>
+                <br>
+                <br>
+                <a href="" class="buttonLink">Picify another text!</a>
             </div>
-        </div>
-        <br>
-        <br>
-        <a href="#" class="buttonLink" id="downloadLink" download>Download Pic!</a>
-        <br>
-        <br>
-        <a href="">Picify another text!</a>
-    </div>
 
 
 
-    <script type="text/javascript" src="lib/jscolor.min.js"></script>
-    <script type="text/javascript" src="lib/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="Text.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+            <script type="text/javascript" src="lib/jscolor.min.js"></script>
+            <script type="text/javascript" src="lib/jquery-1.12.4.min.js"></script>
+            <script type="text/javascript" src="Text.js"></script>
+            <script type="text/javascript" src="script.js"></script>
 
 
 
